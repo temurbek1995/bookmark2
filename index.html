@@ -1,19 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-
-
-  <script src="js/main.js"></script>
-</body>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="site-header__container container">
+        <img
+          class="site-header__logo"
+          src="photos/logo.svg"
+          alt="logo"
+          width="149"
+          height="25"
+        />
+        <nav class="site-header__sitenav sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">FEATURES</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">PRICING</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">CONTACT</a>
+            </li>
+          </ul>
+          <button class="button button--red">LOGIN</button>
+        </nav>
+      </div>
+    </header>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-container container">
+        <div class="hero__content">
+          <h2 class="hero__title">
+            A Simple Bookmark Manager
+          </h2>
+          <p class="hero__text">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="hero__auth-wrapper auth">
+            <a class="button auth__item auth__item--blue" href="#">
+              Get it on Chrome
+            </a>
+            <a class="button auth__item auth__item--gray" href="#">
+              Get it on Firefox
+            </a>
+          </div>
+        </div>
+        <img
+          class="hero__img"
+          src="photos/hero-img.svg"
+          alt="pc-img"
+          width="578"
+          height="385"
+        />
+      </div>
+    </section>
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="container">
+        <div class="features__content index-content">
+          <h2 class="index-content__title title--index">Features</h2>
+          <p class="index-content__text">
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+        <!-- TABLINK -->
+        <div class="features__tablink tablink">
+          <ul class="tablink__list">
+            <li class="tablink__item">
+              <a
+                class="tablink__link js-tablink-link"
+                data-tab-target="#feature-simple-bookmarking"
+                href="#feature-simple-bookmarking"
+              >
+                Simple Bookmarking
+              </a>
+            </li>
+            <li class="tablink__item">
+              <a
+                class="tablink__link js-tablink-link"
+                data-tab-target="#feature-speedy-searching"
+                href="#feature-speedy-searching"
+              >
+                Speedy Searching
+              </a>
+            </li>
+            <li class="tablink__item tablink__item--active">
+              <a
+                class="tablink__link js-tablink-link"
+                data-tab-target="#feature-easy-sharing"
+                href="#feature-easy-sharing"
+              >
+                Easy Sharing
+              </a>
+            </li>
+          </ul>
+          <div class="tablink__wrapper">
+            <div class="tablink__box" id="feature-simple-bookmarking">
+              <img
+                class="tablink__img"
+                src="photos/tablink3.svg"
+                alt="rasm"
+                width="536"
+                height="346"
+              />
+              <div class="tablink__content">
+                <h2 class="tablink__title title--index">
+                  Bookmark in one click
+                </h2>
+                <p class="tablink__text">
+                  Organize your bookmarks however you like. Our
+                  <br />
+                  simple drag-and-drop interface gives you complete
+                  <br />
+                  control over how you manage your favourite sites.
+                </p>
+                <button class="button button--blue">More Info</button>
+              </div>
+            </div>
+            <div class="tablink__box" id="feature-speedy-searching">
+              <img
+                class="tablink__img"
+                src="photos/tablink1.svg"
+                alt="rasm"
+                width="536"
+                height="346"
+              />
+              <div class="tablink__content">
+                <h2 class="tablink__title title--index">
+                  Intelligent search
+                </h2>
+                <p class="tablink__text">
+                  Our powerful search feature will help you find saved
+                  <br />
+                  sites in no time at all. No need to trawl through all of
+                  <br />
+                  your bookmarks.
+                </p>
+                <button class="button button--blue">More Info</button>
+              </div>
+            </div>
+            <div
+              class="tablink__box tablink__box--active"
+              id="feature-easy-sharing"
+            >
+              <img
+                class="tablink__img"
+                src="photos/tablink2.svg"
+                alt="rasm"
+                width="536"
+                height="346"
+              />
+              <div class="tablink__content">
+                <h2 class="tablink__title title--index">
+                  Share your bookmarks
+                </h2>
+                <p class="tablink__text">
+                  Easily share your bookmarks and collections with
+                  <br />
+                  others. Create a shareable link that you can send at
+                  <br />
+                  the click of a button.
+                </p>
+                <button class="button button--blue">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
 </html>
